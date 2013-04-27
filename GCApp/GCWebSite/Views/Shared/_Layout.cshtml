@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+        <title>@ViewBag.Title - Give Camp Matcher</title>
         <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <meta name="viewport" content="width=device-width" />
         @Styles.Render("~/Content/css")
@@ -12,7 +12,7 @@
         <header>
             <div class="content-wrapper">
                 <div class="float-left">
-                    <img src="~/Images/logo.png"/ width="215" height="44">
+                    <a href="http://newenglandgivecamp.org/"><img src="~/Images/logo.png"/ width="215" height="44"></a>
                     <p class="site-title">@Html.ActionLink("Give Camp Matcher", "Index", "Home")</p>
                 </div>
                 <div class="float-right">
@@ -22,8 +22,8 @@
                     <nav>
                         <ul id="menu">
                             <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                            <li>@Html.ActionLink("About", "About", "Home")</li>
-                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                            <li>@Html.ActionLink("Volunteers", "Index", "Volunteer")</li>
+                            <li>@Html.ActionLink("Projects", "Index", "NPOProject")</li>
                         </ul>
                     </nav>
                 </div>
@@ -38,7 +38,10 @@
         <footer>
             <div class="content-wrapper">
                 <div class="float-left">
-                    <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
+                    <p>&copy; @DateTime.Now.Year - A New England Give Camp 2013 Project
+                        <div>Source code on <a href="https://github.com/NEGiveCamp/ThreeGuys">GitHub</a>
+                        </div>
+                    </p>
                 </div>
             </div>
         </footer>
