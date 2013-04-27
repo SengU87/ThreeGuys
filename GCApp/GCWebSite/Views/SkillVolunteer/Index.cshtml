@@ -12,10 +12,13 @@
 <table>
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Skill.SkillLevelDescription)
+            @Html.DisplayNameFor(model => model.Skill.SkillCategory)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Volunteer.SignUpPartyId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SkillLevel.SkillLevelDescription)
         </th>
         <th></th>
     </tr>
@@ -23,10 +26,13 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Skill.SkillLevelDescription)
+            @Html.DisplayFor(modelItem => item.Skill.SkillCategory)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Volunteer.SignUpPartyId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SkillLevel.SkillLevelDescription)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.SkillVolunteerId }) |

@@ -18,8 +18,7 @@ namespace GCWebSite.Controllers
 
         public ActionResult Index()
         {
-            var skills = db.Skills.Include(s => s.SkillLevel);
-            return View(skills.ToList());
+            return View(db.Skills.ToList());
         }
 
         //
@@ -40,7 +39,6 @@ namespace GCWebSite.Controllers
 
         public ActionResult Create()
         {
-            ViewBag.SkillLevelDescription = new SelectList(db.SkillLevels, "SkillLevelDescription", "SkillLevelDescription");
             return View();
         }
 
@@ -58,7 +56,6 @@ namespace GCWebSite.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.SkillLevelDescription = new SelectList(db.SkillLevels, "SkillLevelDescription", "SkillLevelDescription", skill.SkillLevelDescription);
             return View(skill);
         }
 
@@ -72,7 +69,6 @@ namespace GCWebSite.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.SkillLevelDescription = new SelectList(db.SkillLevels, "SkillLevelDescription", "SkillLevelDescription", skill.SkillLevelDescription);
             return View(skill);
         }
 
@@ -89,7 +85,6 @@ namespace GCWebSite.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.SkillLevelDescription = new SelectList(db.SkillLevels, "SkillLevelDescription", "SkillLevelDescription", skill.SkillLevelDescription);
             return View(skill);
         }
 

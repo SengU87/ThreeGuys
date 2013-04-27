@@ -11,24 +11,10 @@
     <legend>Skill</legend>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.SkillLevel.SkillLevelDescription)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.SkillLevel.SkillLevelDescription)
-    </div>
-
-    <div class="display-label">
          @Html.DisplayNameFor(model => model.SkillCategory)
     </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.SkillCategory)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.SkillLevelId)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.SkillLevelId)
     </div>
 </fieldset>
 @using (Html.BeginForm()) {

@@ -38,6 +38,10 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Linq.Dynamic">
+      <HintPath>..\packages\System.Linq.Dynamic.1.0.0\lib\net40\System.Linq.Dynamic.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +50,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Contracts\IGenericRepository.cs" />
+    <Compile Include="Contracts\IUnitOfWork.cs" />
     <Compile Include="Models\Contact.cs" />
     <Compile Include="Models\ContactLink.cs" />
     <Compile Include="Models\Mapping\ContactLinkMap.cs" />
@@ -57,7 +63,6 @@
     <Compile Include="Models\Mapping\SkillLevelMap.cs" />
     <Compile Include="Models\Mapping\SkillMap.cs" />
     <Compile Include="Models\Mapping\SkillVolunteerMap.cs" />
-    <Compile Include="Models\Mapping\TableMap.cs" />
     <Compile Include="Models\Mapping\VolunteerEmailMap.cs" />
     <Compile Include="Models\Mapping\VolunteerMap.cs" />
     <Compile Include="Models\NEGCContext.cs" />
@@ -68,10 +73,11 @@
     <Compile Include="Models\Skill.cs" />
     <Compile Include="Models\SkillLevel.cs" />
     <Compile Include="Models\SkillVolunteer.cs" />
-    <Compile Include="Models\Table.cs" />
     <Compile Include="Models\Volunteer.cs" />
     <Compile Include="Models\VolunteerEmail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\GenericRepository.cs" />
+    <Compile Include="Repository\UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

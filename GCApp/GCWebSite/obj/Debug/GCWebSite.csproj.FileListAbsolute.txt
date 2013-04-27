@@ -170,3 +170,4 @@ C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\Three
 C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCWebSite\obj\Debug\GCWebSite.csprojResolveAssemblyReference.cache
 C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCWebSite\obj\Debug\GCWebSite.dll
 C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCWebSite\obj\Debug\GCWebSite.pdb
+C:\dev\gc2013\ThreeGuys\GCApp\GCWebSite\bin\System.Linq.Dynamic.dll

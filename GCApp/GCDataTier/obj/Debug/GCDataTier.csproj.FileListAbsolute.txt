@@ -14,3 +14,4 @@ C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\Three
 C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCDataTier\obj\Debug\GCDataTier.csprojResolveAssemblyReference.cache
 C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCDataTier\obj\Debug\GCDataTier.dll
 C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCDataTier\obj\Debug\GCDataTier.pdb
+C:\dev\gc2013\ThreeGuys\GCApp\GCDataTier\bin\Debug\System.Linq.Dynamic.dll

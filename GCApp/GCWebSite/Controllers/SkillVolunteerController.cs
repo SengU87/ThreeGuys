@@ -18,7 +18,7 @@ namespace GCWebSite.Controllers
 
         public ActionResult Index()
         {
-            var skillvolunteers = db.SkillVolunteers.Include(s => s.Skill).Include(s => s.Volunteer);
+            var skillvolunteers = db.SkillVolunteers.Include(s => s.Skill).Include(s => s.SkillLevel).Include(s => s.Volunteer);
             return View(skillvolunteers.ToList());
         }
 
@@ -28,6 +28,13 @@ namespace GCWebSite.Controllers
         public ActionResult Details(int id = 0)
         {
             SkillVolunteer skillvolunteer = db.SkillVolunteers.Find(id);
+            //var volunteer = db.Volunteers.Where(v => v.VolunteerId==skillvolunteer.VolunteerId) .Select(v => new { v.VolunteerId, Name = v.FirstName + " " + v.LastName });
+
+
+            ViewBag.Volunteer = skillvolunteer.Volunteer.FirstName + " " + skillvolunteer.Volunteer.LastName;
+
+
+
             if (skillvolunteer == null)
             {
                 return HttpNotFound();
@@ -40,8 +47,14 @@ namespace GCWebSite.Controllers
 
         public ActionResult Create()
         {
-            ViewBag.SkillId = new SelectList(db.Skills, "SkillId", "SkillLevelDescription");
-            ViewBag.VolunteerId = new SelectList(db.Volunteers, "VolunteerId", "SignUpPartyId");
+            ViewBag.SkillId = new SelectList(db.Skills, "SkillId", "SkillCategory");
+            ViewBag.SkillLevelDescription = new SelectList(db.SkillLevels, "SkillLevelDescription", "SkillLevelDescription");
+
+            var volunteers = db.Volunteers.Select(v => new { v.VolunteerId, Name = v.FirstName + " " + v.LastName });
+
+            ViewBag.VolunteerId = new SelectList(volunteers, "VolunteerId", "Name");
+
+            //ViewBag.VolunteerId = new SelectList(db.Volunteers, "VolunteerId", "SignUpPartyId");
             return View();
         }
 
@@ -59,8 +72,12 @@ namespace GCWebSite.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.SkillId = new SelectList(db.Skills, "SkillId", "SkillLevelDescription", skillvolunteer.SkillId);
-            ViewBag.VolunteerId = new SelectList(db.Volunteers, "VolunteerId", "SignUpPartyId", skillvolunteer.VolunteerId);
+            ViewBag.SkillId = new SelectList(db.Skills, "SkillId", "SkillCategory", skillvolunteer.SkillId);
+            ViewBag.SkillLevelDescription = new SelectList(db.SkillLevels, "SkillLevelDescription", "SkillLevelDescription", skillvolunteer.SkillLevelDescription);
+            var volunteers = db.Volunteers.Select(v => new { v.VolunteerId, Name = v.FirstName + " " + v.LastName });
+
+            ViewBag.VolunteerId = new SelectList(volunteers, "VolunteerId", "Name");
+            //ViewBag.VolunteerId = new SelectList(db.Volunteers, "VolunteerId", "SignUpPartyId", skillvolunteer.VolunteerId);
             return View(skillvolunteer);
         }
 
@@ -74,8 +91,13 @@ namespace GCWebSite.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.SkillId = new SelectList(db.Skills, "SkillId", "SkillLevelDescription", skillvolunteer.SkillId);
-            ViewBag.VolunteerId = new SelectList(db.Volunteers, "VolunteerId", "SignUpPartyId", skillvolunteer.VolunteerId);
+            ViewBag.SkillId = new SelectList(db.Skills, "SkillId", "SkillCategory", skillvolunteer.SkillId);
+            ViewBag.SkillLevelDescription = new SelectList(db.SkillLevels, "SkillLevelDescription", "SkillLevelDescription", skillvolunteer.SkillLevelDescription);
+            //ViewBag.VolunteerId = new SelectList(db.Volunteers, "VolunteerId", "SignUpPartyId", skillvolunteer.VolunteerId);
+            var volunteers = db.Volunteers.Select(v => new { v.VolunteerId, Name = v.FirstName + " " + v.LastName });
+
+            ViewBag.VolunteerId = new SelectList(volunteers, "VolunteerId", "Name", skillvolunteer.VolunteerId);
+          
             return View(skillvolunteer);
         }
 
@@ -92,8 +114,13 @@ namespace GCWebSite.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.SkillId = new SelectList(db.Skills, "SkillId", "SkillLevelDescription", skillvolunteer.SkillId);
-            ViewBag.VolunteerId = new SelectList(db.Volunteers, "VolunteerId", "SignUpPartyId", skillvolunteer.VolunteerId);
+            ViewBag.SkillId = new SelectList(db.Skills, "SkillId", "SkillCategory", skillvolunteer.SkillId);
+            ViewBag.SkillLevelDescription = new SelectList(db.SkillLevels, "SkillLevelDescription", "SkillLevelDescription", skillvolunteer.SkillLevelDescription);
+            //ViewBag.VolunteerId = new SelectList(db.Volunteers, "VolunteerId", "SignUpPartyId", skillvolunteer.VolunteerId);
+            var volunteers = db.Volunteers.Select(v => new { v.VolunteerId, Name = v.FirstName + " " + v.LastName });
+
+            ViewBag.VolunteerId = new SelectList(volunteers, "VolunteerId", "Name");
+          
             return View(skillvolunteer);
         }
 
