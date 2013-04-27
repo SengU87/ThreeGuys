@@ -185,6 +185,7 @@
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\ContactLinkController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ImportController.cs" />
     <Compile Include="Controllers\NPOController.cs" />
     <Compile Include="Controllers\NPOProjectController.cs" />
     <Compile Include="Controllers\ProjectController.cs" />
@@ -361,6 +362,7 @@
     <Content Include="Views\SkillVolunteer\Create.cshtml" />
     <Content Include="Views\SkillVolunteer\Edit.cshtml" />
     <Content Include="Views\SkillVolunteer\Delete.cshtml" />
+    <Content Include="Views\Import\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
