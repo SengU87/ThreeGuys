@@ -1,0 +1,127 @@
+﻿@model GCDataTier.Models.Project
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Project</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Type)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Type)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Overview)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Overview)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.BusReq)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.BusReq)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FuncReq)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FuncReq)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TechReq)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TechReq)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AdditionalDetails)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AdditionalDetails)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CanBeCompleted)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CanBeCompleted)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.RequiredDevelopers)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RequiredDevelopers)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.RequiredDesigners)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RequiredDesigners)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.RequiredSupport)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RequiredSupport)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Agile)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Agile)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.NPOTechSkill)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NPOTechSkill)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Confirmation)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Confirmation)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Accepted)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Accepted)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Comments)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Comments)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.VettedBy)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.VettedBy)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ProjectId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

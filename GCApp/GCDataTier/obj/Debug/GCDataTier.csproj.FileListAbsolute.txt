@@ -1,0 +1,8 @@
+C:\dev\gc2013\ThreeGuys\GCApp\GCDataTier\bin\Debug\GCDataTier.dll
+C:\dev\gc2013\ThreeGuys\GCApp\GCDataTier\bin\Debug\GCDataTier.dll.config
+C:\dev\gc2013\ThreeGuys\GCApp\GCDataTier\bin\Debug\GCDataTier.pdb
+C:\dev\gc2013\ThreeGuys\GCApp\GCDataTier\bin\Debug\EntityFramework.dll
+C:\dev\gc2013\ThreeGuys\GCApp\GCDataTier\bin\Debug\EntityFramework.xml
+C:\dev\gc2013\ThreeGuys\GCApp\GCDataTier\obj\Debug\GCDataTier.csprojResolveAssemblyReference.cache
+C:\dev\gc2013\ThreeGuys\GCApp\GCDataTier\obj\Debug\GCDataTier.dll
+C:\dev\gc2013\ThreeGuys\GCApp\GCDataTier\obj\Debug\GCDataTier.pdb

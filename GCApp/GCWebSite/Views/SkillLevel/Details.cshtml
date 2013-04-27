@@ -1,0 +1,22 @@
+﻿@model GCDataTier.Models.SkillLevel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>SkillLevel</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SkillLevelDescription)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SkillLevelDescription)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.SkillLevelId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

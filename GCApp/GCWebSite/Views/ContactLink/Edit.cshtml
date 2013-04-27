@@ -1,0 +1,54 @@
+﻿@model GCDataTier.Models.ContactLink
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>ContactLink</legend>
+
+        @Html.HiddenFor(model => model.ContactLinkId)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ContactId, "Contact")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("ContactId", String.Empty)
+            @Html.ValidationMessageFor(model => model.ContactId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.VolunteerId, "Volunteer")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("VolunteerId", String.Empty)
+            @Html.ValidationMessageFor(model => model.VolunteerId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NPOId, "NPO")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("NPOId", String.Empty)
+            @Html.ValidationMessageFor(model => model.NPOId)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

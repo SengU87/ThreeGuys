@@ -1,0 +1,123 @@
+﻿@model IEnumerable<GCDataTier.Models.Project>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Overview)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BusReq)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FuncReq)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TechReq)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AdditionalDetails)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CanBeCompleted)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RequiredDevelopers)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RequiredDesigners)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RequiredSupport)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Agile)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NPOTechSkill)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Confirmation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Accepted)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Comments)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VettedBy)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Overview)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BusReq)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FuncReq)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TechReq)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AdditionalDetails)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CanBeCompleted)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RequiredDevelopers)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RequiredDesigners)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RequiredSupport)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Agile)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NPOTechSkill)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Confirmation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Accepted)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Comments)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VettedBy)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ProjectId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ProjectId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ProjectId })
+        </td>
+    </tr>
+}
+
+</table>

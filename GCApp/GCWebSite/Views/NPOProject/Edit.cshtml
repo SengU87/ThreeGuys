@@ -1,0 +1,46 @@
+﻿@model GCDataTier.Models.NPOProject
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>NPOProject</legend>
+
+        @Html.HiddenFor(model => model.NPOProjectId)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NPOId, "NPO")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("NPOId", String.Empty)
+            @Html.ValidationMessageFor(model => model.NPOId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ProjectID, "Project")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("ProjectID", String.Empty)
+            @Html.ValidationMessageFor(model => model.ProjectID)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
