@@ -25,9 +25,8 @@ namespace GCDataTier.Models
         public DbSet<Skill> Skills { get; set; }
         public DbSet<SkillLevel> SkillLevels { get; set; }
         public DbSet<SkillVolunteer> SkillVolunteers { get; set; }
-        //public DbSet<Table> Tables { get; set; }
         public DbSet<Volunteer> Volunteers { get; set; }
-        //public DbSet<VolunteerEmail> VolunteerEmails { get; set; }
+        public DbSet<VolunteerEmail> VolunteerEmails { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -40,9 +39,8 @@ namespace GCDataTier.Models
             modelBuilder.Configurations.Add(new SkillMap());
             modelBuilder.Configurations.Add(new SkillLevelMap());
             modelBuilder.Configurations.Add(new SkillVolunteerMap());
-            //modelBuilder.Configurations.Add(new TableMap());
             modelBuilder.Configurations.Add(new VolunteerMap());
-            //modelBuilder.Configurations.Add(new VolunteerEmailMap());
+            modelBuilder.Configurations.Add(new VolunteerEmailMap());
         }
     }
 }

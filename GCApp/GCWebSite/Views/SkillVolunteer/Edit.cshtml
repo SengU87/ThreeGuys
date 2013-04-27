@@ -25,10 +25,18 @@
 
         <div class="editor-label">
             @Html.LabelFor(model => model.VolunteerId, "Volunteer")
-        </div>
+        </div>x
         <div class="editor-field">
             @Html.DropDownList("VolunteerId", String.Empty)
             @Html.ValidationMessageFor(model => model.VolunteerId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SkillLevelDescription, "SkillLevel")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("SkillLevelDescription", String.Empty)
+            @Html.ValidationMessageFor(model => model.SkillLevelDescription)
         </div>
 
         <p>

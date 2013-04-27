@@ -14,27 +14,11 @@
         <legend>Skill</legend>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.SkillLevelDescription, "SkillLevel")
-        </div>
-        <div class="editor-field">
-            @Html.DropDownList("SkillLevelDescription", String.Empty)
-            @Html.ValidationMessageFor(model => model.SkillLevelDescription)
-        </div>
-
-        <div class="editor-label">
             @Html.LabelFor(model => model.SkillCategory)
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.SkillCategory)
             @Html.ValidationMessageFor(model => model.SkillCategory)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.SkillLevelId)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.SkillLevelId)
-            @Html.ValidationMessageFor(model => model.SkillLevelId)
         </div>
 
         <p>

@@ -11,10 +11,10 @@
     <legend>SkillVolunteer</legend>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Skill.SkillLevelDescription)
+         @Html.DisplayNameFor(model => model.Skill.SkillCategory)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.Skill.SkillLevelDescription)
+        @Html.DisplayFor(model => model.Skill.SkillCategory)
     </div>
 
     <div class="display-label">
@@ -22,6 +22,13 @@
     </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.Volunteer.SignUpPartyId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SkillLevel.SkillLevelDescription)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SkillLevel.SkillLevelDescription)
     </div>
 </fieldset>
 @using (Html.BeginForm()) {

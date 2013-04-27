@@ -41,7 +41,11 @@ namespace GCWebSite.Controllers
         public ActionResult Create()
         {
             ViewBag.ProjectId = new SelectList(db.Projects, "ProjectId", "Type");
-            ViewBag.VolunteerId = new SelectList(db.Volunteers, "VolunteerId", "SignUpPartyId");
+            //ViewBag.VolunteerId = new SelectList(db.Volunteers, "VolunteerId", "SignUpPartyId");
+            var volunteers = db.Volunteers.Select(v => new { v.VolunteerId, Name = v.FirstName + " " + v.LastName });
+
+            ViewBag.VolunteerId = new SelectList(volunteers, "VolunteerId", "Name");
+
             return View();
         }
 
@@ -60,7 +64,10 @@ namespace GCWebSite.Controllers
             }
 
             ViewBag.ProjectId = new SelectList(db.Projects, "ProjectId", "Type", projectvolunteer.ProjectId);
-            ViewBag.VolunteerId = new SelectList(db.Volunteers, "VolunteerId", "SignUpPartyId", projectvolunteer.VolunteerId);
+            //ViewBag.VolunteerId = new SelectList(db.Volunteers, "VolunteerId", "SignUpPartyId", projectvolunteer.VolunteerId);
+            var volunteers = db.Volunteers.Select(v => new { v.VolunteerId, Name = v.FirstName + " " + v.LastName });
+
+            ViewBag.VolunteerId = new SelectList(volunteers, "VolunteerId", "Name");
             return View(projectvolunteer);
         }
 
@@ -75,7 +82,10 @@ namespace GCWebSite.Controllers
                 return HttpNotFound();
             }
             ViewBag.ProjectId = new SelectList(db.Projects, "ProjectId", "Type", projectvolunteer.ProjectId);
-            ViewBag.VolunteerId = new SelectList(db.Volunteers, "VolunteerId", "SignUpPartyId", projectvolunteer.VolunteerId);
+            //ViewBag.VolunteerId = new SelectList(db.Volunteers, "VolunteerId", "SignUpPartyId", projectvolunteer.VolunteerId);
+            var volunteers = db.Volunteers.Select(v => new { v.VolunteerId, Name = v.FirstName + " " + v.LastName });
+
+            ViewBag.VolunteerId = new SelectList(volunteers, "VolunteerId", "Name");
             return View(projectvolunteer);
         }
 

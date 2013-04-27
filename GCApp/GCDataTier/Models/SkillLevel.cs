@@ -7,11 +7,11 @@ namespace GCDataTier.Models
     {
         public SkillLevel()
         {
-            this.Skills = new List<Skill>();
+            this.SkillVolunteers = new List<SkillVolunteer>();
         }
 
         public int SkillLevelId { get; set; }
         public string SkillLevelDescription { get; set; }
-        public virtual ICollection<Skill> Skills { get; set; }
+        public virtual ICollection<SkillVolunteer> SkillVolunteers { get; set; }
     }
 }
