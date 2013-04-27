@@ -1,4 +1,4 @@
 ThreeGuys
 =========
 
-Those 3 guys
+This is New England Give Camp 2013 Hackathon project.
