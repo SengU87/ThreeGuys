@@ -11,9 +11,6 @@ namespace GCDataTier.Models.Mapping
             this.HasKey(t => t.NPOProjectId);
 
             // Properties
-            this.Property(t => t.NPOProjectId)
-                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
-
             // Table & Column Mappings
             this.ToTable("NPOProject");
             this.Property(t => t.NPOProjectId).HasColumnName("NPOProjectId");

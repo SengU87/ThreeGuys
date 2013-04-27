@@ -7,18 +7,14 @@ namespace GCDataTier.Models
     {
         public NPO()
         {
-            this.NPOAddresses = new List<NPOAddress>();
-            this.NPOEmails = new List<NPOEmail>();
-            this.NPOPhones = new List<NPOPhone>();
+            this.ContactLinks = new List<ContactLink>();
             this.NPOProjects = new List<NPOProject>();
         }
 
         public int NPOID { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public virtual ICollection<NPOAddress> NPOAddresses { get; set; }
-        public virtual ICollection<NPOEmail> NPOEmails { get; set; }
-        public virtual ICollection<NPOPhone> NPOPhones { get; set; }
+        public virtual ICollection<ContactLink> ContactLinks { get; set; }
         public virtual ICollection<NPOProject> NPOProjects { get; set; }
     }
 }

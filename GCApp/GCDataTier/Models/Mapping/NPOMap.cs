@@ -11,9 +11,6 @@ namespace GCDataTier.Models.Mapping
             this.HasKey(t => t.NPOID);
 
             // Properties
-            this.Property(t => t.NPOID)
-                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
-
             this.Property(t => t.Name)
                 .IsRequired()
                 .HasMaxLength(100);

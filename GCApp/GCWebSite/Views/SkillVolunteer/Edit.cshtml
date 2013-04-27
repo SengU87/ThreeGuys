@@ -1,0 +1,46 @@
+﻿@model GCDataTier.Models.SkillVolunteer
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>SkillVolunteer</legend>
+
+        @Html.HiddenFor(model => model.SkillVolunteerId)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SkillId, "Skill")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("SkillId", String.Empty)
+            @Html.ValidationMessageFor(model => model.SkillId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.VolunteerId, "Volunteer")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("VolunteerId", String.Empty)
+            @Html.ValidationMessageFor(model => model.VolunteerId)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

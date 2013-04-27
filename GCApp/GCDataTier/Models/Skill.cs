@@ -11,7 +11,10 @@ namespace GCDataTier.Models
         }
 
         public int SkillId { get; set; }
-        public string SkillName { get; set; }
+        public string SkillLevelDescription { get; set; }
+        public string SkillCategory { get; set; }
+        public Nullable<int> SkillLevelId { get; set; }
+        public virtual SkillLevel SkillLevel { get; set; }
         public virtual ICollection<SkillVolunteer> SkillVolunteers { get; set; }
     }
 }

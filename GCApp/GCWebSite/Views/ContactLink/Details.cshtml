@@ -1,0 +1,36 @@
+﻿@model GCDataTier.Models.ContactLink
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>ContactLink</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Contact.Email)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Contact.Email)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Volunteer.SignUpPartyId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Volunteer.SignUpPartyId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.NPO.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NPO.Name)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ContactLinkId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

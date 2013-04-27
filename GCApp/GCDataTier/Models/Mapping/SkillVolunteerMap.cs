@@ -11,15 +11,11 @@ namespace GCDataTier.Models.Mapping
             this.HasKey(t => t.SkillVolunteerId);
 
             // Properties
-            this.Property(t => t.SkillVolunteerId)
-                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
-
             // Table & Column Mappings
             this.ToTable("SkillVolunteer");
             this.Property(t => t.SkillVolunteerId).HasColumnName("SkillVolunteerId");
             this.Property(t => t.SkillId).HasColumnName("SkillId");
             this.Property(t => t.VolunteerId).HasColumnName("VolunteerId");
-            this.Property(t => t.SkillLevelId).HasColumnName("SkillLevelId");
 
             // Relationships
             this.HasRequired(t => t.Skill)

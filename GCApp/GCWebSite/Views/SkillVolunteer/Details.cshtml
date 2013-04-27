@@ -1,0 +1,29 @@
+﻿@model GCDataTier.Models.SkillVolunteer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>SkillVolunteer</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Skill.SkillLevelDescription)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Skill.SkillLevelDescription)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Volunteer.SignUpPartyId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Volunteer.SignUpPartyId)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.SkillVolunteerId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

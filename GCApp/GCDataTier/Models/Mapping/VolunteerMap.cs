@@ -11,9 +11,6 @@ namespace GCDataTier.Models.Mapping
             this.HasKey(t => t.VolunteerId);
 
             // Properties
-            this.Property(t => t.VolunteerId)
-                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
-
             this.Property(t => t.SignUpPartyId)
                 .HasMaxLength(100);
 

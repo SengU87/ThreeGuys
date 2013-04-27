@@ -7,7 +7,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{66BCBF3D-96FC-41F7-BCD4-B7194AF52C2A}</ProjectGuid>
+    <ProjectGuid>{2AB51504-0AEB-4E69-A511-771E5CCAAFE1}</ProjectGuid>
     <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -182,7 +182,17 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\ContactLinkController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NPOController.cs" />
+    <Compile Include="Controllers\NPOProjectController.cs" />
+    <Compile Include="Controllers\ProjectController.cs" />
+    <Compile Include="Controllers\ProjectVolunteerController.cs" />
+    <Compile Include="Controllers\SkillController.cs" />
+    <Compile Include="Controllers\SkillLevelController.cs" />
+    <Compile Include="Controllers\SkillVolunteerController.cs" />
+    <Compile Include="Controllers\VolunteerController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -301,12 +311,68 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
+    <Content Include="Views\NPO\Index.cshtml" />
+    <Content Include="Views\NPO\Details.cshtml" />
+    <Content Include="Views\NPO\Create.cshtml" />
+    <Content Include="Views\NPO\Edit.cshtml" />
+    <Content Include="Views\NPO\Delete.cshtml" />
+    <Content Include="Views\Project\Index.cshtml" />
+    <Content Include="Views\Project\Details.cshtml" />
+    <Content Include="Views\Project\Create.cshtml" />
+    <Content Include="Views\Project\Edit.cshtml" />
+    <Content Include="Views\Project\Delete.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Contact\Details.cshtml" />
+    <Content Include="Views\Contact\Create.cshtml" />
+    <Content Include="Views\Contact\Edit.cshtml" />
+    <Content Include="Views\Contact\Delete.cshtml" />
+    <Content Include="Views\Skill\Index.cshtml" />
+    <Content Include="Views\Skill\Details.cshtml" />
+    <Content Include="Views\Skill\Create.cshtml" />
+    <Content Include="Views\Skill\Edit.cshtml" />
+    <Content Include="Views\Skill\Delete.cshtml" />
+    <Content Include="Views\Volunteer\Index.cshtml" />
+    <Content Include="Views\Volunteer\Details.cshtml" />
+    <Content Include="Views\Volunteer\Create.cshtml" />
+    <Content Include="Views\Volunteer\Edit.cshtml" />
+    <Content Include="Views\Volunteer\Delete.cshtml" />
+    <Content Include="Views\ContactLink\Index.cshtml" />
+    <Content Include="Views\ContactLink\Details.cshtml" />
+    <Content Include="Views\ContactLink\Create.cshtml" />
+    <Content Include="Views\ContactLink\Edit.cshtml" />
+    <Content Include="Views\ContactLink\Delete.cshtml" />
+    <Content Include="Views\NPOProject\Index.cshtml" />
+    <Content Include="Views\NPOProject\Details.cshtml" />
+    <Content Include="Views\NPOProject\Create.cshtml" />
+    <Content Include="Views\NPOProject\Edit.cshtml" />
+    <Content Include="Views\NPOProject\Delete.cshtml" />
+    <Content Include="Views\ProjectVolunteer\Index.cshtml" />
+    <Content Include="Views\ProjectVolunteer\Details.cshtml" />
+    <Content Include="Views\ProjectVolunteer\Create.cshtml" />
+    <Content Include="Views\ProjectVolunteer\Edit.cshtml" />
+    <Content Include="Views\ProjectVolunteer\Delete.cshtml" />
+    <Content Include="Views\SkillLevel\Index.cshtml" />
+    <Content Include="Views\SkillLevel\Details.cshtml" />
+    <Content Include="Views\SkillLevel\Create.cshtml" />
+    <Content Include="Views\SkillLevel\Edit.cshtml" />
+    <Content Include="Views\SkillLevel\Delete.cshtml" />
+    <Content Include="Views\SkillVolunteer\Index.cshtml" />
+    <Content Include="Views\SkillVolunteer\Details.cshtml" />
+    <Content Include="Views\SkillVolunteer\Create.cshtml" />
+    <Content Include="Views\SkillVolunteer\Edit.cshtml" />
+    <Content Include="Views\SkillVolunteer\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GCDataTier\GCDataTier.csproj">
+      <Project>{3f137926-c6f7-4e1f-9ea6-e447f5ecff34}</Project>
+      <Name>GCDataTier</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

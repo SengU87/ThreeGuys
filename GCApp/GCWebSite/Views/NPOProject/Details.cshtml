@@ -1,0 +1,29 @@
+﻿@model GCDataTier.Models.NPOProject
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>NPOProject</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.NPO.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NPO.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Project.Type)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Project.Type)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.NPOProjectId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

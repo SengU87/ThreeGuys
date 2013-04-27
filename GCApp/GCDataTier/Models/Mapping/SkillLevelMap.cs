@@ -8,20 +8,17 @@ namespace GCDataTier.Models.Mapping
         public SkillLevelMap()
         {
             // Primary Key
-            this.HasKey(t => t.SkillLevelId);
+            this.HasKey(t => t.SkillLevelDescription);
 
             // Properties
-            this.Property(t => t.SkillLevelId)
-                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
-
-            this.Property(t => t.Description)
+            this.Property(t => t.SkillLevelDescription)
                 .IsRequired()
-                .HasMaxLength(50);
+                .HasMaxLength(100);
 
             // Table & Column Mappings
             this.ToTable("SkillLevel");
             this.Property(t => t.SkillLevelId).HasColumnName("SkillLevelId");
-            this.Property(t => t.Description).HasColumnName("Description");
+            this.Property(t => t.SkillLevelDescription).HasColumnName("SkillLevelDescription");
         }
     }
 }

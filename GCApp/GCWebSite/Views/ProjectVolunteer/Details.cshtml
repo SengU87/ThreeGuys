@@ -1,0 +1,36 @@
+﻿@model GCDataTier.Models.ProjectVolunteer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>ProjectVolunteer</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Project.Type)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Project.Type)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Volunteer.SignUpPartyId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Volunteer.SignUpPartyId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.IsLead)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IsLead)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ProjectVolunteerId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

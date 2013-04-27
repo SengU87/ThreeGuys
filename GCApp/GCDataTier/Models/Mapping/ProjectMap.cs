@@ -11,9 +11,6 @@ namespace GCDataTier.Models.Mapping
             this.HasKey(t => t.ProjectId);
 
             // Properties
-            this.Property(t => t.ProjectId)
-                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
-
             this.Property(t => t.VettedBy)
                 .IsFixedLength()
                 .HasMaxLength(10);
