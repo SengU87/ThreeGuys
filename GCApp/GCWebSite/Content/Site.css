@@ -8,8 +8,8 @@ body {
     background-color: #fff;
     border-top: solid 10px #000;
     color: #333;
-    font-size: .85em;
-    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -128,9 +128,18 @@ footer {
 
 /* site title
 ----------------------------------------------------------*/
+.site-logo {
+    width: 215px;
+    height: 44px;
+}
+
+.site-logo a:hover {
+    background-color: #fff;
+}
+
 .site-title {
     color: #c8c8c8;
-    font-family: Rockwell, Consolas, "Courier New", Courier, monospace;
+    font-family: 'Noto Serif', serif;
     font-size: 2.3em;
     margin: 0;
 }
