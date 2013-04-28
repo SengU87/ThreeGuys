@@ -41,7 +41,7 @@ namespace GCWebSite.Controllers
         public ActionResult Create()
         {
             ViewBag.NPOId = new SelectList(db.NPOes, "NPOID", "Name");
-            ViewBag.ProjectID = new SelectList(db.Projects, "ProjectId", "Type");
+            ViewBag.ProjectID = new SelectList(db.Projects, "ProjectId", "Name");
             return View();
         }
 

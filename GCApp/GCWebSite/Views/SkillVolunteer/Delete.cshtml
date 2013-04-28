@@ -16,13 +16,29 @@
     <div class="display-field">
         @Html.DisplayFor(model => model.Skill.SkillCategory)
     </div>
-
     <div class="display-label">
+        @Html.DisplayNameFor(model => model.Volunteer.FirstName)
+        @*<b>Name</b>*@
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Volunteer.FirstName)
+        @*@Html.Raw(ViewBag.Volunteer)*@
+    </div>
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Volunteer.LastName)
+        @*<b>Name</b>*@
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Volunteer.LastName)
+        @*@Html.Raw(ViewBag.Volunteer)*@
+    </div>
+
+@*    <div class="display-label">
          @Html.DisplayNameFor(model => model.Volunteer.SignUpPartyId)
     </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.Volunteer.SignUpPartyId)
-    </div>
+    </div>*@
 
     <div class="display-label">
          @Html.DisplayNameFor(model => model.SkillLevel.SkillLevelDescription)

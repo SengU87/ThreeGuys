@@ -15,7 +15,10 @@
             @Html.DisplayNameFor(model => model.Skill.SkillCategory)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Volunteer.SignUpPartyId)
+            @Html.DisplayNameFor(model => model.Volunteer.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Volunteer.LastName)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.SkillLevel.SkillLevelDescription)
@@ -29,8 +32,12 @@
             @Html.DisplayFor(modelItem => item.Skill.SkillCategory)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Volunteer.SignUpPartyId)
+            @Html.DisplayFor(modelItem => item.Volunteer.FirstName)
         </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Volunteer.LastName)
+        </td>
+
         <td>
             @Html.DisplayFor(modelItem => item.SkillLevel.SkillLevelDescription)
         </td>

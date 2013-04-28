@@ -18,6 +18,7 @@ namespace GCDataTier.Models.Mapping
             // Table & Column Mappings
             this.ToTable("Project");
             this.Property(t => t.ProjectId).HasColumnName("ProjectId");
+            this.Property(t => t.Name).HasColumnName("Name");
             this.Property(t => t.Type).HasColumnName("Type");
             this.Property(t => t.Overview).HasColumnName("Overview");
             this.Property(t => t.BusReq).HasColumnName("BusReq");
