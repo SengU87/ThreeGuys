@@ -87,6 +87,7 @@ C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\Three
 C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCWebSite\obj\Debug\GCWebSite.dll
 C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCWebSite\obj\Debug\GCWebSite.pdb
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 C:\dev\gc2013\ThreeGuys\GCApp\GCWebSite\bin\GCWebSite.dll
 C:\dev\gc2013\ThreeGuys\GCApp\GCWebSite\bin\GCWebSite.pdb
@@ -179,3 +180,5 @@ C:\dev\gc2013\ThreeGuys\GCApp\GCWebSite\obj\Debug\GCWebSite.pdb
 C:\dev\gc2013\ThreeGuys\GCApp\GCWebSite\bin\GCBLL.dll
 C:\dev\gc2013\ThreeGuys\GCApp\GCWebSite\bin\GCBLL.pdb
 >>>>>>> 64d843f... Late night checkin
+=======
+>>>>>>> b12776c8bdf5e4f53ae8866bb964911b3dbdf047
