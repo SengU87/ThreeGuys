@@ -5,6 +5,11 @@ C:\dev\gc2013\ThreeGuys\GCApp\GCBLL\obj\Debug\GCBLL.dll
 C:\dev\gc2013\ThreeGuys\GCApp\GCBLL\obj\Debug\GCBLL.pdb
 C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCBLL\bin\Debug\GCBLL.dll
 C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCBLL\bin\Debug\GCBLL.pdb
+C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCBLL\bin\Debug\GCDataTier.dll
+C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCBLL\bin\Debug\EntityFramework.dll
+C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCBLL\bin\Debug\System.Linq.Dynamic.dll
+C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCBLL\bin\Debug\GCDataTier.pdb
+C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCBLL\bin\Debug\EntityFramework.xml
 C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCBLL\obj\Debug\GCBLL.csprojResolveAssemblyReference.cache
 C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCBLL\obj\Debug\GCBLL.dll
 C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCBLL\obj\Debug\GCBLL.pdb

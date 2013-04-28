@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.OleDb;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using GCDataTier.Models;
+using System.Reflection;
 
 namespace GCWebSite.Controllers
 {
@@ -70,6 +72,34 @@ namespace GCWebSite.Controllers
                         ds = new DataSet("Attendees");
                         objAdapter.Fill(ds);
                         objConn.Close();
+                    }
+
+                    //GCBLL.VolunteerImport objVolunteer = new GCBLL.VolunteerImport();
+                    //objVolunteer.ImportVolunteerInformation(ds);
+
+                    foreach (DataRow dRow in ds.Tables[0].Rows)
+                    {
+                        Volunteer objVol = new Volunteer();
+                        objVol.FirstName = dRow["First name"].ToString();
+                        objVol.LastName = dRow["Last name"].ToString();
+                        objVol.SignUpPartyId = dRow["Attendee #"].ToString();
+                        if (dRow["Date"] != null) objVol.SignUpDate = (Convert.ToDateTime(dRow["Date"]));
+
+                        Contact objContact = new Contact();
+                        objContact.Email = dRow["Email"].ToString();
+                        objContact.PhoneNumber = dRow["Cell Phone"].ToString();
+
+                        var volResult = db.Volunteers.Add(objVol);
+                        var contactResult = db.Contacts.Add(objContact);
+
+                        ContactLink obj = new ContactLink()
+                        {
+                            Volunteer = volResult,
+                            Contact = contactResult
+                        };
+                        db.SaveChanges();
+
+
                     }
 
                 }

@@ -374,6 +374,10 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\GCBLL\GCBLL.csproj">
+      <Project>{9763ff59-e4b0-4e34-8a1a-8269138c532c}</Project>
+      <Name>GCBLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GCDataTier\GCDataTier.csproj">
       <Project>{3f137926-c6f7-4e1f-9ea6-e447f5ecff34}</Project>
       <Name>GCDataTier</Name>
