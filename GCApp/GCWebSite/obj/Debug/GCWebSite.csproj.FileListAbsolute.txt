@@ -171,3 +171,5 @@ C:\dev\gc2013\ThreeGuys\GCApp\GCWebSite\bin\zh-Hant\System.Spatial.resources.dll
 C:\dev\gc2013\ThreeGuys\GCApp\GCWebSite\obj\Debug\GCWebSite.csprojResolveAssemblyReference.cache
 C:\dev\gc2013\ThreeGuys\GCApp\GCWebSite\obj\Debug\GCWebSite.dll
 C:\dev\gc2013\ThreeGuys\GCApp\GCWebSite\obj\Debug\GCWebSite.pdb
+C:\dev\gc2013\ThreeGuys\GCApp\GCWebSite\bin\GCBLL.dll
+C:\dev\gc2013\ThreeGuys\GCApp\GCWebSite\bin\GCBLL.pdb
