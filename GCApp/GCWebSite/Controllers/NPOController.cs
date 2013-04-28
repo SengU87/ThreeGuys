@@ -5,9 +5,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using GCBLL.Helpers;
 using GCDataTier.Models;
-using GCWebSite.ViewModels;
 
 namespace GCWebSite.Controllers
 {
@@ -49,28 +47,16 @@ namespace GCWebSite.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(NPOContact npoContact)
+        public ActionResult Create(NPO npo)
         {
             if (ModelState.IsValid)
             {
-                var npoResult = db.NPOes.Add(npoContact.NPO);
-
-                if (ContainsValues.Contact(npoContact.Contact))
-                {
-                    var npoContactResult = db.Contacts.Add(npoContact.Contact);
-
-                    ContactLink contactLink = new ContactLink()
-                        {
-                            NPO = npoResult,
-                            Contact = npoContactResult
-                        };
-                    var contatctLinkResult = db.ContactLinks.Add(contactLink);
-                }
+                db.NPOes.Add(npo);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(npoContact);
+            return View(npo);
         }
 
         //

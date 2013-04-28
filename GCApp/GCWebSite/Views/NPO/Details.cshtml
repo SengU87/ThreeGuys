@@ -17,35 +17,6 @@
     <div class="display-field">
         @Html.DisplayFor(model => model.Description)
     </div>
- 
-    
-    
- <table>
-    <tr>
-        <th>
-            Project Name
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model.NPOProjects) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Project.Name)
-        </td>
-        <td>
-            @Html.ActionLink("Details", "Details", "Project", new { id=item.Project.ProjectId }, null) 
-            
-        </td>
-    </tr>
-}
-
-</table>
-    
-    
-    
-
-
 </fieldset>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id=Model.NPOID }) |
