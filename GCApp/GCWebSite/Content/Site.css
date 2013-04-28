@@ -245,7 +245,10 @@ ul#menu {
 }
 
 .object-title {
-
+    font-size: 2em;
+    font-weight: 300;
+    color: #34495e;
+    padding-bottom: 1em;
 }
 
 /* page titles */
