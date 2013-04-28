@@ -83,9 +83,10 @@ namespace GCWebSite.Controllers
             }
             ViewBag.ProjectId = new SelectList(db.Projects, "ProjectId", "Type", projectvolunteer.ProjectId);
             //ViewBag.VolunteerId = new SelectList(db.Volunteers, "VolunteerId", "SignUpPartyId", projectvolunteer.VolunteerId);
-            var volunteers = db.Volunteers.Select(v => new { v.VolunteerId, Name = v.FirstName + " " + v.LastName });
 
-            ViewBag.VolunteerId = new SelectList(volunteers, "VolunteerId", "Name");
+            var volunteers = db.Volunteers.Select(v => new { v.VolunteerId, Name = v.FirstName + " " + v.LastName });
+            ViewBag.VolunteerId = new SelectList(volunteers, "VolunteerId", "Name", projectvolunteer.VolunteerId);
+            
             return View(projectvolunteer);
         }
 

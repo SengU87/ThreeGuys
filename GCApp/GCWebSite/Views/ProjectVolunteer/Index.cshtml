@@ -15,8 +15,12 @@
             @Html.DisplayNameFor(model => model.Project.Type)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Volunteer.SignUpPartyId)
+            @Html.DisplayNameFor(model => model.Volunteer.FirstName)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Volunteer.LastName)
+        </th>
+
         <th>
             @Html.DisplayNameFor(model => model.IsLead)
         </th>
@@ -29,7 +33,10 @@
             @Html.DisplayFor(modelItem => item.Project.Type)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Volunteer.SignUpPartyId)
+            @Html.DisplayFor(modelItem => item.Volunteer.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Volunteer.LastName)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.IsLead)
