@@ -12,7 +12,7 @@ namespace GCDataTier.Models
         }
 
         public int ProjectId { get; set; }
-        public string Name { get; set; }
+        //public string Name { get; set; }
         public string Type { get; set; }
         public string Overview { get; set; }
         public string BusReq { get; set; }

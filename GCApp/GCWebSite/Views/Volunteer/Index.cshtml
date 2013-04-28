@@ -44,7 +44,7 @@
             @Html.DisplayFor(modelItem => item.SignUpPartyId)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.SignUpDate)
+            @item.SignUpDate.Value.ToShortDateString()
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.FirstName)

@@ -76,7 +76,6 @@ namespace GCWebSite.Controllers
 
                     //GCBLL.VolunteerImport objVolunteer = new GCBLL.VolunteerImport();
                     //objVolunteer.ImportVolunteerInformation(ds);
-
                     foreach (DataRow dRow in ds.Tables[0].Rows)
                     {
                         Volunteer objVol = new Volunteer();
@@ -89,18 +88,56 @@ namespace GCWebSite.Controllers
                         objContact.Email = dRow["Email"].ToString();
                         objContact.PhoneNumber = dRow["Cell Phone"].ToString();
 
+                        //var updateVol = db.Volunteers.Where(n => n.SignUpPartyId == objVol.SignUpPartyId);
+
+                        var id = (from Volunteer in db.Volunteers.Where(n => n.SignUpPartyId == objVol.SignUpPartyId)
+                                  select Volunteer.VolunteerId).SingleOrDefault();
+
+                        if (id != null)
+                        {
+                            Volunteer volunteer = db.Volunteers.Find(Int32.Parse(id.ToString()));
+                            db.Volunteers.Remove(volunteer);
+                        }
                         var volResult = db.Volunteers.Add(objVol);
                         var contactResult = db.Contacts.Add(objContact);
-
                         ContactLink obj = new ContactLink()
                         {
                             Volunteer = volResult,
                             Contact = contactResult
                         };
-                        db.SaveChanges();
 
 
+                        //bool bValid = false;
+                        //foreach (Volunteer vol in db.Volunteers)
+                        //{
+                        //    var valid = db.Volunteers.Select(n => vol.SignUpPartyId);
+                            
+                        //    if (vol.SignUpPartyId != objVol.SignUpPartyId)
+                        //    {
+                        //        bValid = true;
+                        //        break;
+                        //    }
+                        //}
+                        //if (!(Helpers.VolunteerHelper.hasVolunteer(objVol, db.Volunteers.ToList())))
+                        //{
+                        //    var volResult = db.Volunteers.Add(objVol);
+                        //    var contactResult = db.Contacts.Add(objContact);
+                        //    ContactLink obj = new ContactLink()
+                        //    {
+                        //        Volunteer = volResult,
+                        //        Contact = contactResult
+                        //    };
+                        //}
+                        //else
+                        //{
+                        //    if (ModelState.IsValid)
+                        //    {
+                        //        db.Entry(objVol).State = EntityState.Modified;
+                        //        db.Entry(objVol).CurrentValues.SetValues(objVol);
+                        //    }
+                        //}                      
                     }
+                    db.SaveChanges();
 
                 }
                 catch (Exception ex)
@@ -109,10 +146,10 @@ namespace GCWebSite.Controllers
                 }
                 finally
                 {
-                    //if ((objConn != null))
-                    //{
-                    //    objConn.Close();
-                    //}
+                    if ((objConn != null))
+                    {
+                        objConn.Close();
+                    }
                 }
             }
             return View(db.Volunteers.ToList());

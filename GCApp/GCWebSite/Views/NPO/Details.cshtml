@@ -30,9 +30,9 @@
 
 @foreach (var item in Model.NPOProjects) {
     <tr>
-        <td>
+       @* <td>
             @Html.DisplayFor(modelItem => item.Project.Name)
-        </td>
+        </td>*@
         <td>
             @Html.ActionLink("Details", "Details", "Project", new { id=item.Project.ProjectId }, null) 
             

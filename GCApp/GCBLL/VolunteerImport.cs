@@ -16,16 +16,6 @@ namespace GCBLL
         {
             try
             {
-                if (ds != null)
-                {
-                    foreach (DataRow dRow in ds.Tables[0].Rows)
-                    {
-                        //GCDataTier.Models.Volunteer objVol = CreateListItem<GCDataTier.Models.Volunteer>(dRow);
-
-                        
-
-                    }
-                }
             }
             catch (Exception ex)
             {

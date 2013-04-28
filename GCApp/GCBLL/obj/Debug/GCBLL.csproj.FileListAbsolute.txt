@@ -1,9 +1,3 @@
-C:\dev\gc2013\ThreeGuys\GCApp\GCBLL\bin\Debug\GCBLL.dll
-C:\dev\gc2013\ThreeGuys\GCApp\GCBLL\bin\Debug\GCBLL.pdb
-C:\dev\gc2013\ThreeGuys\GCApp\GCBLL\obj\Debug\GCBLL.csprojResolveAssemblyReference.cache
-C:\dev\gc2013\ThreeGuys\GCApp\GCBLL\obj\Debug\GCBLL.dll
-C:\dev\gc2013\ThreeGuys\GCApp\GCBLL\obj\Debug\GCBLL.pdb
-<<<<<<< HEAD
 C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCBLL\bin\Debug\GCBLL.dll
 C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCBLL\bin\Debug\GCBLL.pdb
 C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCBLL\bin\Debug\GCDataTier.dll
@@ -14,10 +8,3 @@ C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\Three
 C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCBLL\obj\Debug\GCBLL.csprojResolveAssemblyReference.cache
 C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCBLL\obj\Debug\GCBLL.dll
 C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCBLL\obj\Debug\GCBLL.pdb
-=======
-C:\dev\gc2013\ThreeGuys\GCApp\GCBLL\bin\Debug\GCDataTier.dll
-C:\dev\gc2013\ThreeGuys\GCApp\GCBLL\bin\Debug\EntityFramework.dll
-C:\dev\gc2013\ThreeGuys\GCApp\GCBLL\bin\Debug\System.Linq.Dynamic.dll
-C:\dev\gc2013\ThreeGuys\GCApp\GCBLL\bin\Debug\GCDataTier.pdb
-C:\dev\gc2013\ThreeGuys\GCApp\GCBLL\bin\Debug\EntityFramework.xml
->>>>>>> 64d843f... Late night checkin
