@@ -85,6 +85,7 @@ C:\dev\gc2013\ThreeGuys\GCApp\GCWebSite\obj\Debug\GCWebSite.dll
 C:\dev\gc2013\ThreeGuys\GCApp\GCWebSite\obj\Debug\GCWebSite.pdb
 C:\dev\gc2013\ThreeGuys\GCApp\GCWebSite\bin\GCDataTier.dll
 C:\dev\gc2013\ThreeGuys\GCApp\GCWebSite\bin\GCDataTier.pdb
+C:\dev\gc2013\ThreeGuys\GCApp\GCWebSite\bin\System.Linq.Dynamic.dll
 C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCWebSite\bin\GCWebSite.dll
 C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCWebSite\bin\GCWebSite.pdb
 C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCWebSite\bin\Antlr3.Runtime.dll
@@ -116,6 +117,7 @@ C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\Three
 C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCWebSite\bin\WebGrease.dll
 C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCWebSite\bin\WebMatrix.Data.dll
 C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCWebSite\bin\WebMatrix.WebData.dll
+C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCWebSite\bin\System.Linq.Dynamic.dll
 C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCWebSite\bin\GCDataTier.pdb
 C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCWebSite\bin\EntityFramework.xml
 C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCWebSite\bin\System.Net.Http.Formatting.xml
@@ -170,4 +172,3 @@ C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\Three
 C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCWebSite\obj\Debug\GCWebSite.csprojResolveAssemblyReference.cache
 C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCWebSite\obj\Debug\GCWebSite.dll
 C:\Users\Shanmuganathan\Documents\Visual Studio 2012\Projects\GiveCamp2013\ThreeGuys\GCApp\GCWebSite\obj\Debug\GCWebSite.pdb
-C:\dev\gc2013\ThreeGuys\GCApp\GCWebSite\bin\System.Linq.Dynamic.dll

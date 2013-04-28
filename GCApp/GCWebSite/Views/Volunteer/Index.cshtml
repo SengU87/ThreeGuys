@@ -1,10 +1,22 @@
 ﻿@model IEnumerable<GCDataTier.Models.Volunteer>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Volunteers";
 }
 
-<h2>Index</h2>
+<h2>Volunteer</h2>
+@using (Html.BeginForm("Index", "Volunteer", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <p>
+        <input type="file" id="fUpload" name="fUpload" />
+    </p>
+    <input type="submit" id="btnUpload" value="Import Volunteers" />
+    <br />
+    <h3 style="font-family:calibri; font-size:12px; color:red;">@ViewBag.Message</h3>
+    <hr style="width:75%" />
+    <br /><br />
+}
+
 
 <p>
     @Html.ActionLink("Create New", "Create")
