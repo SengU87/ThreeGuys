@@ -8,7 +8,7 @@ body {
     background-color: #fff;
     border-top: solid 10px #000;
     color: #333;
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
@@ -66,11 +66,11 @@ h4, h5, h6 {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 1.75em;
 }
 
 h2 {
-    font-size: 1.75em;
+    font-size: 1.5em;
 }
 
 h3 {
@@ -128,12 +128,12 @@ footer {
 
 /* site title
 ----------------------------------------------------------*/
-.site-logo {
+a.site-logo {
     width: 215px;
     height: 44px;
 }
 
-.site-logo a:hover {
+a.site-logo:hover {
     background-color: #fff;
 }
 
@@ -239,6 +239,18 @@ ul#menu {
         .featured p {
             font-size: 1.1em;
         }
+
+/* details page */
+.display-label {
+    font-family: 'Noto Serif', serif;
+    font-style: italic;
+    color: #95a5a6;
+    padding: 0.25em 0em 0.25em 0em
+}
+
+.object-title {
+
+}
 
 /* page titles */
 hgroup.title {
@@ -461,14 +473,15 @@ textarea {
     input[type="submit"],
     input[type="button"],
     button {
-        background-color: #d3dce0;
-        border: 1px solid #787878;
+        background-color: #34495e;
+        color: #fff;
         cursor: pointer;
         font-size: 1.2em;
-        font-weight: 600;
-        padding: 7px;
+        font-weight: 400;
+        padding: 0.5em 1.5em 0.5em 1.5em;
         margin-right: 8px;
         width: auto;
+        border-radius: 5px;
     }
 
     td input[type="submit"],
