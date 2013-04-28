@@ -93,7 +93,7 @@ namespace GCWebSite.Controllers
                         var id = (from Volunteer in db.Volunteers.Where(n => n.SignUpPartyId == objVol.SignUpPartyId)
                                   select Volunteer.VolunteerId).SingleOrDefault();
 
-                        if (id != null)
+                        if ((id != null) && (id > 0))
                         {
                             Volunteer volunteer = db.Volunteers.Find(Int32.Parse(id.ToString()));
                             db.Volunteers.Remove(volunteer);
