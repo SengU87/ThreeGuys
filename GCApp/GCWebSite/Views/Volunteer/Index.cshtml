@@ -4,7 +4,7 @@
     ViewBag.Title = "Volunteers";
 }
 
-<h2>All Volunteers</h2>
+<h2 class="object-title">All Volunteers</h2>
 @using (Html.BeginForm("Index", "Volunteer", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     <p>
@@ -24,16 +24,16 @@
 <table class="table-container">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.SignUpPartyId)
+            Attendee ID
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.SignUpDate)
+            Sign-Up Date
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.FirstName)
+            First Name
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.LastName)
+            Last Name
         </th>
         <th></th>
     </tr>
