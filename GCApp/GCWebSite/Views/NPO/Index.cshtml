@@ -4,12 +4,12 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table>
+<h2 class="object-title">All Non-Profit Organizations</h2>
+<p class="text-container">All non-profit organizations are listed on this page.</p>
+<div class="action-link-container">
+    @Html.ActionLink("Add a Non-Profit Organization", "Create", null, new { @class = "action-link" } )
+</div>
+<table class="table-container">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Name)

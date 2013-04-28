@@ -5,7 +5,6 @@
         <title>@ViewBag.Title - Give Camp Matcher</title>
         <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Noto+Serif' rel='stylesheet' type='text/css'>
         <meta name="viewport" content="width=device-width" />
         @Styles.Render("~/Content/css")
         @Scripts.Render("~/bundles/modernizr")
@@ -18,12 +17,10 @@
                     <p class="site-title">@Html.ActionLink("Matcher", "Index", "Home")</p>
                 </div>
                 <div class="float-right">
-                    <section id="login">
-                        @Html.Partial("_LoginPartial")
-                    </section>
                     <nav>
                         <ul id="menu">
                             <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("Non-Profits", "Index", "NPO")</li>
                             <li>@Html.ActionLink("Volunteers", "Index", "Volunteer")</li>
                             <li>@Html.ActionLink("Projects", "Index", "NPOProject")</li>
                         </ul>
@@ -40,9 +37,8 @@
         <footer>
             <div class="content-wrapper">
                 <div class="float-left">
-                    <p>A New England Give Camp 2013 Project
-                        <div>Source code on <a href="https://github.com/NEGiveCamp/ThreeGuys">GitHub</a>
-                        </div>
+                    <p>A New England Give Camp 2013 Project</p>
+                    <p>Source code on <a href="https://github.com/NEGiveCamp/ThreeGuys">GitHub</a>
                     </p>
                 </div>
             </div>

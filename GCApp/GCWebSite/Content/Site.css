@@ -1,5 +1,4 @@
 ﻿html {
-    background-color: #e2e2e2;
     margin: 0;
     padding: 0;
 }
@@ -15,20 +14,22 @@ body {
 }
 
 a {
-    color: #333;
+    color: #34495e;
     outline: none;
     padding-left: 3px;
     padding-right: 3px;
-    text-decoration: underline;
+    padding-bottom: 3px;
+    text-decoration: none;
+    border-bottom: 1px dotted #34495e;
 }
 
     a:link, a:visited,
     a:active, a:hover {
-        color: #333;
+        color: #34495e;
     }
 
     a:hover {
-        background-color: #c7d1d6;
+        background-color: #ecf0f1;
     }
 
 header, footer, hgroup,
@@ -60,7 +61,6 @@ mark {
 
 h1, h2, h3,
 h4, h5, h6 {
-    color: #000;
     margin-bottom: 0;
     padding-bottom: 0;
 }
@@ -95,23 +95,18 @@ h5, h6 {
 ----------------------------------------------------------*/
 .content-wrapper {
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 800px;
 }
 
 #body {
-    background-color: #efeeef;
+    background-color: #ecf0f1;
     clear: both;
     padding-bottom: 35px;
 }
 
     .main-content {
-        background: url("../Images/accent.png") no-repeat;
         padding-left: 10px;
         padding-top: 30px;
-    }
-
-    .featured + .main-content {
-        background: url("../Images/heroAccent.png") no-repeat;
     }
 
 header .content-wrapper {
@@ -120,8 +115,8 @@ header .content-wrapper {
 
 footer {
     clear: both;
-    background-color: #e2e2e2;
-    font-size: .8em;
+    background-color: #fff;
+    font-size: 1em;
     height: 100px;
 }
 
@@ -131,6 +126,7 @@ footer {
 a.site-logo {
     width: 215px;
     height: 44px;
+    border: none;
 }
 
 a.site-logo:hover {
@@ -139,13 +135,13 @@ a.site-logo:hover {
 
 .site-title {
     color: #c8c8c8;
-    font-family: 'Noto Serif', serif;
     font-size: 2.3em;
     margin: 0;
 }
 
 .site-title a, .site-title a:hover, .site-title a:active {
     background: none;
+    border: none;
     color: #c8c8c8;
     outline: none;
     text-decoration: none;
@@ -189,8 +185,8 @@ a.site-logo:hover {
 /* menu
 ----------------------------------------------------------*/
 ul#menu {
-    font-size: 1.3em;
-    font-weight: 600;
+    font-size: 1em;
+    font-weight: 300;
     margin: 0 0 5px;
     padding: 0;
     text-align: right;
@@ -204,8 +200,10 @@ ul#menu {
 
         ul#menu li a {
             background: none;
-            color: #999;
+            color: #34495e;
             text-decoration: none;
+            text-transform: uppercase;
+            border: none;
         }
 
         ul#menu li a:hover {
@@ -218,38 +216,39 @@ ul#menu {
 ----------------------------------------------------------*/
 /* featured */
 .featured {
-    background-color: #fff;
+    background-color: #ecf0f1;
 }
 
     .featured .content-wrapper {
-        background-color: #7ac0da;
-        background-image: -ms-linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
-        background-image: -o-linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
-        background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #7ac0da), color-stop(1, #a4d4e6));
-        background-image: -webkit-linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
-        background-image: linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
-        color: #3e5667;
+        color: #34495e;
         padding: 20px 40px 30px 40px;
     }
-
-        .featured hgroup.title h1, .featured hgroup.title h2 {
-            color: #fff;
-        }
 
         .featured p {
             font-size: 1.1em;
         }
 
+.text-container, .table-container {
+    float: left;
+}
+
+.action-link-container {
+    float: right;
+}
+
 /* details page */
 .display-label {
-    font-family: 'Noto Serif', serif;
-    font-style: italic;
+    font-size: 1.25em;
+    font-weight: 300;
     color: #95a5a6;
     padding: 0.25em 0em 0.25em 0em
 }
 
 .object-title {
-
+    font-size: 2em;
+    font-weight: 300;
+    color: #34495e;
+    padding-bottom: 1em;
 }
 
 /* page titles */
@@ -470,9 +469,17 @@ textarea {
         width: auto;
     }
 
+    input[type="file"] {
+        background-color: #ecf0f1;
+        cursor: pointer;
+        border: none;
+        vertical-align: baseline;
+    }
+
     input[type="submit"],
     input[type="button"],
-    button {
+    button,
+    a.action-link {
         background-color: #34495e;
         color: #fff;
         cursor: pointer;
@@ -482,7 +489,14 @@ textarea {
         margin-right: 8px;
         width: auto;
         border-radius: 5px;
+        text-decoration: none;
     }
+
+        input:hover,
+        button:hover,
+        a:hover {
+            opacity: 0.7;
+        }
 
     td input[type="submit"],
     td input[type="button"],
@@ -557,10 +571,11 @@ table {
 }
 
 th {
-    font-size: 1.2em;
     text-align: left;
-    border: none 0px;
-    padding-left: 0;
+    padding: 1em 1em 0.5em 0em;
+    font-size: 1.25em;
+    font-weight: 300;
+    color: #95a5a6;
 }
 
     th a {
