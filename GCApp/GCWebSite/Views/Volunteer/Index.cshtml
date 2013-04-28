@@ -4,7 +4,7 @@
     ViewBag.Title = "Volunteers";
 }
 
-<h2>Volunteer</h2>
+<h2>All Volunteers</h2>
 @using (Html.BeginForm("Index", "Volunteer", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     <p>
@@ -17,11 +17,11 @@
     <br /><br />
 }
 
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table>
+<p class="text-container">All volunteers are listed on this page.</p>
+<div class="action-link-container">
+    @Html.ActionLink("Add a Volunteer", "Create", null, new { @class = "action-link" })
+</div>
+<table class="table-container">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.SignUpPartyId)
